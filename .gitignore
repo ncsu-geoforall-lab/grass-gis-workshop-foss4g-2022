@@ -1,2 +1,4 @@
 *.tif
 *.tif.aux.xml
+*.geojson
+.ipynb_checkpoints
