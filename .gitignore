@@ -1,3 +1,8 @@
+animation.gif
+interpolation.py
+jobs.sh
+myscript.py
+viewshed_*.png
 *.tif
 *.tif.aux.xml
 *.geojson
