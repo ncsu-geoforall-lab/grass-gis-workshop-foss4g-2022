@@ -35,3 +35,4 @@ sqlite3
 unixodbc-dev
 xvfb
 zlib1g-dev
+parallel
