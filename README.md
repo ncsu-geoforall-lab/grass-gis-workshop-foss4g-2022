@@ -10,12 +10,9 @@ You do not need to install anything, the notebooks are hosted on mybinder.org.
 
 If binder does not start even after couple tries, there are backup solutions below that work for the workshop only:
 
-### Notebooks hosted on our server ()
-After you obtain a username, go to:
-
-    http://....ncsu.edu:8080
-
-Use your username and create a new password. You should see a Jupyter Lab, create new Terminal from the Launcher tab:
+### Notebooks hosted on our server
+During a workshop, you will obtain a username and go to a given URL.
+There you can login with your username and create a new password. You should see a Jupyter Lab, so create a new Terminal from the Launcher tab and execute:
 
     git clone https://github.com/ncsu-geoforall-lab/grass-gis-workshop-foss4g-2022.git
     mv grass-gis-workshop-foss4g-2022/*.ipynb .
