@@ -12,14 +12,12 @@ If binder does not start even after couple tries, there are backup solutions bel
 
 ### Notebooks hosted on our server
 During a workshop, you will obtain a username and go to a given URL.
-There you can login with your username and create a new password. You should see a Jupyter Lab, so create a new Terminal from the Launcher tab and execute:
+There you can login with your username and create a new password.
+You should see a Jupyter Lab, so create a new Terminal from the Launcher tab and execute (use Ctrl+V to paste):
 
     git clone https://github.com/ncsu-geoforall-lab/grass-gis-workshop-foss4g-2022.git
     mv grass-gis-workshop-foss4g-2022/*.ipynb .
     rm -rf grass-gis-workshop-foss4g-2022/
-    
-Then execute (from your home folder):
-
     cp -R /data/grass-gis-workshop-foss4g-2022/* .
     
 Then find `workshop_part_1.ipynb` on the left side and double click at it.
