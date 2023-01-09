@@ -6,7 +6,7 @@ This is a set of Jupyter Notebooks for FOSS4G 2022 workshop.
 
 ## How to run the notebooks
 You do not need to install anything, the notebooks are hosted on mybinder.org.
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ncsu-geoforall-lab/grass-gis-workshop-foss4g-2022/main?urlpath=lab%2Ftree%2Fworkshop_part_1.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ncsu-geoforall-lab/grass-gis-workshop-foss4g-2022/main?urlpath=lab%2Ftree%2Fworkshop_part_1_intro.ipynb)
 
 If binder does not start even after couple tries, there are backup solutions below that work for the workshop only:
 
@@ -20,7 +20,7 @@ You should see a Jupyter Lab, so create a new Terminal from the Launcher tab and
     rm -rf grass-gis-workshop-foss4g-2022/
     cp -R /data/grass-gis-workshop-foss4g-2022/* .
     
-Then find `workshop_part_1.ipynb` on the left side and double click at it.
+Then find `workshop_part_1_intro.ipynb` on the left side and double click at it.
 
 ### Notebook hosted on Google Colab
 Open `colab_workshop.ipynb` in Google Colab.
