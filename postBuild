@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# exit on error
+set -e
+
+# get the source code
+git clone --depth 1 --branch main https://github.com/OSGeo/grass.git grass-src
+
+# enter the directory with source code
+cd grass-src
+
+# compile
+./configure \
+    --enable-largefile=yes \
+    --with-nls \
+    --with-cxx \
+    --with-readline \
+    --with-bzlib \
+    --with-pthread \
+    --with-proj-share=/usr/share/proj \
+    --with-geos=/usr/bin/geos-config \
+    --with-cairo \
+    --with-opengl-libs=/usr/include/GL \
+    --with-freetype=yes --with-freetype-includes="/usr/include/freetype2/" \
+    --with-sqlite=yes
+make
+
+# leave the directory with source code
+cd ..
+
+# put command on path
+# ensure the user specific bin dir exists (already on path)
+mkdir -p $HOME/.local/bin/
+# create link to build
+ln -s $HOME/grass-src/bin.*/grass* $HOME/.local/bin/grass
+
+# download a sample dataset
+mkdir -p grassdata \
+  && curl -SL https://grass.osgeo.org/sampledata/north_carolina/nc_spm_08_grass7.zip > nc_spm_08_grass7.zip \
+  && unzip -qq nc_spm_08_grass7.zip \
+  && mv nc_spm_08_grass7 grassdata \
+  && rm nc_spm_08_grass7.zip
+wget https://zenodo.org/record/6967699/files/FOSS4G_2022_GRASS_GIS_workshop.zip
+unzip FOSS4G_2022_GRASS_GIS_workshop.zip
+rm FOSS4G_2022_GRASS_GIS_workshop.zip
