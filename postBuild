@@ -24,7 +24,7 @@ cd grass-src
     --with-freetype=yes --with-freetype-includes="/usr/include/freetype2/" \
     --with-sqlite=yes
 make
-
+make install
 # leave the directory with source code
 cd ..
 
