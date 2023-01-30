@@ -2,7 +2,7 @@
 
 # exit on error
 set -e
-
+cd $HOME
 # get the source code
 git clone --depth 1 --branch main https://github.com/OSGeo/grass.git grass-src
 
