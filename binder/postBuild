@@ -4,11 +4,13 @@
 set -e
 
 # get the source code
-git clone https://github.com/OSGeo/grass.git grass-src
-git checkout 193559782a68cc999e54d94dd4402b583a0c593c
+git clone --branch main https://github.com/OSGeo/grass.git grass-src
 
 # enter the directory with source code
 cd grass-src
+
+# get the specific version (there is no tag)
+git checkout 193559782a68cc999e54d94dd4402b583a0c593c
 
 # compile
 ./configure \
