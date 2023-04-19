@@ -4,7 +4,8 @@
 set -e
 
 # get the source code
-git clone --depth 1 --branch 193559782a68cc999e54d94dd4402b583a0c593c https://github.com/OSGeo/grass.git grass-src
+git clone --branch main https://github.com/OSGeo/grass.git grass-src
+git checkout 193559782a68cc999e54d94dd4402b583a0c593c
 
 # enter the directory with source code
 cd grass-src
